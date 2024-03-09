@@ -22,7 +22,7 @@ services:
 
   db:
     image: postgres:13-alpine
-    volumeS:
+    volumes:
       - dev-db-data:/var/lib/posgreqsql/data
     environment:
       - POSTGRES_DB=devdb
